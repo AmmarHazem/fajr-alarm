@@ -137,7 +137,7 @@ class _FajrPrayerState extends State<FajrPrayer> {
     prefs.remove('prayerHour');
     prefs.remove('prayerMinute');
     prefs.remove('activeAlarm');
-    Future.delayed(Duration(minutes: 5), () {
+    Future.delayed(Duration(minutes: 10), () {
       _alarmIsPlaying = false;
       prefs.setBool('alarmIsPlaying', false);
       // print('--- stop alarm');
